@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>Hello World!</h2>
         <h3>I am Prem</h3>
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -26,3 +25,12 @@ function App() {
 }
 
 export default App;
+
+//Return the Hello World!
+function HelloWorld(){
+  return(
+    <h1>Hello World!</h1>
+  );
+}
+
+//export default HelloWorld;
