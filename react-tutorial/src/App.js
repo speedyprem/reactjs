@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        {HelloWorld()}
         <h3>I am Prem</h3>
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -15,8 +16,7 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Learn React
         </a>
       </header>
@@ -27,10 +27,8 @@ function App() {
 export default App;
 
 //Return the Hello World!
-function HelloWorld(){
-  return(
+function HelloWorld() {
+  return (
     <h1>Hello World!</h1>
   );
 }
-
-//export default HelloWorld;
