@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom';
 
 function App() {
   return (
@@ -35,3 +36,18 @@ function HelloWorld() {
     element
   );
 }
+
+//print the real time
+function tick() {
+    const element = (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {new Date().toLocaleTimeString()}.</h2>
+      </div>
+    );
+    // highlight-next-line
+    ReactDOM.render(element, document.getElementById('root'));
+  }
+  
+  setInterval(tick, 1000);
+  
